@@ -2,32 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Gilroy;  
+    font-family: "Plain Light";  
+    color: white;
 }
 html , body{
     height: 100%;
     width: 100%;
+   
 }
-                                                                      /* loading part  */
+                                                                      /* loader  part  */
 
 #loader{
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 99;
-    background-color: #0B0B0B;
+    background-color: #010101;
+    padding: 20vh 8vw;
+    line-height: 1;
 
+
+}
+.line{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+    height:fit-content;
+    overflow: hidden;
+    gap: 2vw;
+  
+}
+
+#line-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+   
+} 
+#line-part1 h5 , #line-part1 h6{
+    font-size: 3vw;
+    font-family: "silk serif";
+    font-weight: 400;
+}
+
+/* for stabiltily of firt line we just find widthh and align it to right  */
+#line-part1 h5{
+width: 5vw;
+text-align: right;
+}
+
+.line h1{
+    
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    
+}
+.line h2{
+    font-size: 7vw ;
+    text-transform: uppercase;
+  opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes anime {
+    0%{
+        font-family:"Plain Light" ;
+        -webkit-text-stroke: 1px white;
+        color: white;
+        opacity: 1;
+    }
+    48%{
+        font-family:"Plain Light" ;
+        -webkit-text-stroke: 1px white;
+        color: white;
+        opacity: 0;
+    }
+  
+    50%{
+        font-family:"Silk serif" ;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        opacity: 1;
+      }
+    100%{
+        font-family:"Silk serif" ;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        opacity: 0;
+      }
 }
                                          /* not giving height to main div  because of locomotive  js  */
 
  #main{
     position: relative;
-    background-color: #151515;
+    background-color:#010101 ;
  }
 
 
  #page1{
 height: 100vh;
  background-color: #151515;
+ /* background-color: #953b3b; */
+ 
+
  width: 100%;
  }
