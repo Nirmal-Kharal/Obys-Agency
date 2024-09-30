@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;  
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+                                                                      /* loading part  */
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: #0B0B0B;
+
+}
+                                         /* not giving height to main div  because of locomotive  js  */
+
+ #main{
+    position: relative;
+    background-color: #151515;
+ }
+
+
+ #page1{
+height: 100vh;
+ background-color: #151515;
+ width: 100%;
+ }
