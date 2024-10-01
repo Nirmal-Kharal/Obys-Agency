@@ -1,115 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Plain Light";  
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plain Light";
+  color: white;
 }
-html , body{
-    height: 100%;
-    width: 100%;
-   
+
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-                                                                      /* loader  part  */
 
-#loader{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    background-color: #010101;
-    padding: 20vh 8vw;
-    line-height: 1;
-
-
+#crsr{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    z-index: 999;
+ border: 2px solid rgba(255, 255, 255, 0.686);
+    position:fixed ;
+    mix-blend-mode: difference;
+    transform: translate(-50% , -50%);
 }
-.line{
+
+/* loader  part  */
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-color: #010101;
+  padding: 20vh 8vw;
+  line-height: 1;
+}
+
+.line {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-    height:fit-content;
-    overflow: hidden;
-    gap: 2vw;
-  
+  height: fit-content;
+  overflow: hidden;
+  gap: 2vw;
 }
 
-#line-part1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
-   
-} 
-#line-part1 h5 , #line-part1 h6{
-    font-size: 3vw;
-    font-family: "silk serif";
-    font-weight: 400;
+#line-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+#line-part1 h5,
+#line-part1 h6 {
+  font-size: 3vw;
+  font-family: "silk serif";
+  font-weight: 400;
 }
 
 /* for stabiltily of firt line we just find widthh and align it to right  */
-#line-part1 h5{
-width: 5vw;
-text-align: right;
+#line-part1 h5 {
+  width: 5vw;
+  text-align: right;
 }
 
-.line h1{
-    
-    font-size: 7vw;
-    text-transform: uppercase;
-    font-weight: 900;
-
-    
+.line h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight: 900;
 }
-.line h2{
-    font-size: 7vw ;
-    text-transform: uppercase;
+
+.line h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
   opacity: 0;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
-    
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes anime {
-    0%{
-        font-family:"Plain Light" ;
-        -webkit-text-stroke: 1px white;
-        color: white;
-        opacity: 1;
-    }
-    48%{
-        font-family:"Plain Light" ;
-        -webkit-text-stroke: 1px white;
-        color: white;
-        opacity: 0;
-    }
-  
-    50%{
-        font-family:"Silk serif" ;
-        -webkit-text-stroke: 1px white;
-        color: transparent;
-        opacity: 1;
-      }
-    100%{
-        font-family:"Silk serif" ;
-        -webkit-text-stroke: 1px white;
-        color: transparent;
-        opacity: 0;
-      }
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px white;
+    color: white;
+    opacity: 1;
+  }
+
+  48% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px white;
+    color: white;
+    opacity: 0;
+  }
+
+  50% {
+    font-family: "Silk serif";
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    opacity: 1;
+  }
+
+  100% {
+    font-family: "Silk serif";
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    opacity: 0;
+  }
 }
-                                         /* not giving height to main div  because of locomotive  js  */
 
- #main{
-    position: relative;
-    background-color:#010101 ;
- }
+/* not giving height to main div  because of locomotive  js  */
+
+#main {
+  position: relative;
+  background-color: #010101;
+}
+
+#page1 {
+  height: 100vh;
+  background-color: #151515;
+  /* background-color: #953b3b; */
+  width: 100%;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 6vw ;
+}
+#navPart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    text-transform: uppercase;
+}
+#navPart1 h3{
+    font-size: 1vw;
+    font-weight: 500;
+
+}
+
+.hero{
+    /* background-color: red; */
+   height: fit-content;
+   width: 72%;
+   margin-left: 27%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+}
+
+/* if hameley hero ma margin deyo vane harrek child ley ligxw but hame ley ffirst  child lai  margin ddeyerw whole lai nai push garna sakenxa  */
+
+.hero:nth-child(2){
+
+    margin-top: 13vh;  
+}
 
 
- #page1{
-height: 100vh;
- background-color: #151515;
- /* background-color: #953b3b; */
- 
+.hero h1{
+    font-size: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height:7vw;
 
- width: 100%;
- }
+}
+.hero h2, .hero h3{
+    font-size: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height:7vw;
+   
+}
+.hero h2:hover {
+   -webkit-text-stroke: 1px white;
+   color: transparent;
+   font-weight: 400;
+   
+}
