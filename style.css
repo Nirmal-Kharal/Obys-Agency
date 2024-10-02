@@ -29,7 +29,7 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   background-color: #010101;
   padding: 20vh 8vw;
   line-height: 1;
@@ -150,6 +150,15 @@ body {
    display: flex;
    align-items: center;
 }
+#hero1::before{
+  content: "01";
+  font-family: "silk serif";
+  font-size: 3vw;
+  font-weight: 500;
+  position: absolute;
+margin-left: -9vw;
+
+}
 
 /* if hameley hero ma margin deyo vane harrek child ley ligxw but hame ley ffirst  child lai  margin ddeyerw whole lai nai push garna sakenxa  */
 
@@ -166,16 +175,276 @@ body {
     line-height:7vw;
 
 }
-.hero h2, .hero h3{
+.hero h2{
     font-size: 7vw;
     font-weight: 600;
     text-transform: uppercase;
     line-height:7vw;
+    padding-bottom: 1vw;
+    border-bottom: 0.8vw solid #fff;
+
+  
+
    
 }
 .hero h2:hover {
    -webkit-text-stroke: 1px white;
    color: transparent;
    font-weight: 400;
-   
+   border-bottom: 0.8vw solid #151515;
+}
+
+
+#page2{
+  background-color: #151515;
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  padding-top: 13vh;
+  position: relative;
+
+}
+
+#videoContainer{
+  position: relative;
+  height: 74vh;
+  width: 62%;
+  margin-left: 28%;
+  /* overflow: hidden; */
+
+}
+#videoContainer::before{
+  content: "02";
+  font-family: "silk serif";
+  font-size: 3vw;
+  font-weight: 500;
+  position: absolute;
+margin-left: -9vw;}
+
+#videoContainer  img{
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+top: 0;
+}
+
+#videoContainer  video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#videoCrsr{
+  height: 8vw;
+  width: 8vw;
+  background-color: #FFA63D;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+  top: -10%;
+  left: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#videoCrsr i{
+  font-size: 2vw;
+}
+
+#page3{
+  min-height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+
+#page4{
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #151515; */
+  position: relative;
+  padding-top: 5vh;
+}
+
+#page4Content{
+  width: 72%;
+  margin-left: 28%;
+}
+#page4Content::before{
+  content: "03";
+  font-family: "silk serif";
+  font-size: 3vw;
+  font-weight: 500;
+  position: absolute;
+  margin-left: -9vw;}
+
+#page4Content h1{
+  font-size: 7vw ;
+  text-transform: uppercase;
+}
+ .underline{
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+   margin: 5vw 0;
+}
+
+#page4Content > p{
+font-size: 2.6vw;
+width: 80%;
+margin-bottom: 3vw;
+position: relative;
+}
+#page4-flex{
+  padding-top: 5vw;
+  display: flex;
+
+}
+#page4-flex img{
+  width: 45%;
+ 
+}
+
+#page4-flex p{
+  font-size: 1vw;
+  width: 25%;
+  margin-left: 2vw;
+}
+#blueDiv{
+  /* position: absolute; */
+  background-color: #3F7DF4;
+  width: 33vw;
+  padding: 6vw 2vw;
+  position: relative;
+  margin-top: -30vh;
+  margin-left: 22vw;
+  
+
+}
+.blue-div-elem{
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+/* background-color: red; */
+padding: 1.5vw 0;
+border-bottom: .2vh solid #ffffff95;
+
+}
+.blue-div-elem h4{
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+.blue-div-elem p{
+  width: 50%;
+
+}
+
+
+#page5{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+
+}
+.elem{
+/* background-color: red; */
+white-space: nowrap;
+overflow-x: hidden;
+}
+.elem2{
+/* background-color: red; */
+white-space: nowrap;
+overflow-x: hidden;
+}
+.elem h1{
+  font-size: 6vw;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 16px;
+  animation: anime3 19s linear  infinite  ;
+
+
+}
+.elem2 h1{
+  font-size: 6vw;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 16px;
+  animation: anime3 19s linear  infinite reverse ;
+
+
+}
+
+@keyframes anime3 {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(calc(-100% - 20px));
+  }
+  
+}
+.elem span , .elem2 span{
+  font-family:"Silk serif";
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+
+}
+
+#footer{
+  min-height: 80vh;
+  width: 72%;
+  margin-left: 28%;
+ 
+}
+#footer h1{
+  font-size: 7vw;
+  font-weight: 600;
+  font-family: "Plain light";
+  text-transform: uppercase;
+  position: relative;
+}
+#footer h1::before{
+  content: "04";
+  font-family: "silk serif";
+  font-size: 3vw;
+  font-weight: 500;
+  position: absolute;
+margin-left: -9vw;
+
+}
+#footerDiv{
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 7vw;
+}
+.box h6{
+  font-size: 1vw;
+  text-transform: uppercase;
+  padding-bottom: 2vw;
+
+}
+.box h5{
+  font-size: 1.5vw;
+  font-weight: 500;
+  
+
+}
+.underline1{
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff85;
+margin: 3vw 0;
+
+}
+#last{
+  
+  padding: 2vw 0;
 }

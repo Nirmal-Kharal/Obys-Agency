@@ -91,5 +91,6 @@ function cursorAnimation() {
  
 }
 
+
 loadingAnimation();
 cursorAnimation();
