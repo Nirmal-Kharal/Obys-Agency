@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obys Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -40,7 +41,7 @@
     <!-- ------------------------------------ main part ----------------------------------- -->
     <div id="main">
       <!-- ----------------------------------page 1 ------------------------------------ -->
-      <div id="page1">
+      <div id="page1" data-scroll>
         <div id="nav">
           <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
             <path
@@ -105,7 +106,7 @@
         </div>
       </div>
 
-      <div id="page2">
+      <div id="page2" data-scroll data-scroll-speed ="-1">
         <div id="videoContainer">
           <div id="videoCrsr"><i class="ri-play-fill"></i></div>
           <img
@@ -120,8 +121,8 @@
           ></video>
         </div>
       </div>
-      <div id="page3"></div>
-      <div id="page4">
+      <div id="page3" data-scroll></div>
+      <div id="page4" data-scroll>
         <div id="page4Content">
           <h1>ABOUT obys</h1>
           <div class="underline"></div>
@@ -170,7 +171,7 @@
           <div class="underline"></div>
         </div>
       </div>
-      <div id="page5">
+      <div id="page5" data-scroll>
         <div class="elem">
           <h1>fashion - <span>Technology</span> - sport-</h1>
           <h1>fashion - <span>Technology</span> - sport-</h1>
@@ -188,7 +189,7 @@
           <h1><span>automotive </span> - hotels - music -</h1>
         </div>
       </div>
-      <div id="footer">
+      <div id="footer" data-scroll >
         <h1>Let's create</h1>
         <div class="underline"></div>
         <div id="footerDiv">
@@ -218,7 +219,7 @@
       </div>
       </div>
     
-
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
